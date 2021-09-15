@@ -24,7 +24,7 @@ The code has issues, yet the workflow passes. **Your job is to make the workflow
 
 ## Issues that need to be 'shifted left' by the workflow
 
-Here are some of the issues with the implementation. Create a failing workflow for any _two_ of them:
+Here are some of the issues with the implementation. Create a failing workflow for at least _two_ of them:
 
 - **Duplication**. The code repeats a check in every interface. The problem here is duplication - an update will trigger multiple modifications. Your workflow must fail due to code-duplication, so that developers would need to address this for the pipe to pass.
 - **Coverage**. Error conditions are not covered by the tests. That means an improper error handling will get detected only when the end-user encounters the error. Make a pipe that will fail due to lack of test-coverage.
